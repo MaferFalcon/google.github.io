@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/********************************************************/
+
+/* Navegación o iconos de arriba*/
+header{
+    /* width=ancho y height=alto*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    /* Justificar hacia la derecha*/
+    justify-content: flex-end;
+}
+
+/* Acceder a una clase con un punto*/
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none; /*quitar puntos*/
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none; /*quitar la raya abajo de los links*/
+    cursor: pointer; /*cambiar la flecha al picarle al link*/
+
+}
+
+nav .nav-right-section a{
+    margin-right: 25px; /*espacio entre los links*/
+    color: darkslategrey;
+}
+
+nav .nav-right-section .menu{
+    /*poner el link de la imagen de los iconos de docs para no tenerlo en mi index.html*/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    margin-right: 25px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+/* Imagen estilo*/
+nav .nav-right-section img{
+    border-radius: 60px; /* Hacer la imagen circular o bordes circulares*/
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+/***********************************************************/
+
+/* MAIN*/
+
+main{
+    margin-top: 50px;
+    text-align: center; /*centrar los elementos*/
+}
+
+/* sección logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/* logo google*/
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+
+/* seccion input*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/*borde alrededor del input*/
+main .main-input-container{
+    width: 500px;
+    border-radius: 80px; /*poner el borde con curva*/
+    border: 1px solid gray; /* hacer ancho el borde de la barra de busqueda*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    width: 440px; /*largo del input*/
+    height: 40px; /*alto del input*/
+    outline: none; /*quitar el borde que sale si lo seleccionas*/
+}
+
+/*hacer que aparezca sombra detras cuando se selecciona*/
+main .main-input-container:hover{
+    box-shadow: 0px 1px 3px 2px gray; /*4 veces por los 4 lados*/
+}
+
+/*lupa*/
+main .main-input .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+}
+
+/*micrófono*/
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+}
+
+/*cámara*/
+main .main-input .cam-icon{
+    background-image: url("https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg");
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+}
+
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block; /*en la misma linea*/
+}
+
+main .main-buttons button{
+    border: 1px;
+    width: 150px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: rgb(243, 241, 241);
+    margin-right: 15px;
+    font-size: 14px;
+    padding: 0 15px; /*margen interno*/
+    color: rgb(90, 87, 87); /* color antes de hover o seleccionar*/
+}
+
+/*hacer que interactue el botón cuando se pasa por encima*/
+main .main-buttons button:hover{
+box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+background-color: rgb(243, 241, 241);
+border: 1px solid rgb(185, 179, 179); /*cambia color de botón*/
+color: rgb(53, 51, 51); /*nuevo color de letra*/
+cursor: pointer; /*el mouse se hace mano*/
+}
+
+/***********************************************************/
+/***********************************************************/
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute; /*permite la posición que nosotros ponemos*/
+    font-size: 13px;
+    background-color: #f2f2f2; /*escribir el # y luego los numeros y letras*/
+    border-top: 1px solid #e4e4e4;
+    /*Footer dividido en columnas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*divide en dos columnas*/
+    align-items: center;
+    bottom: 0; /*posicionar al final*/
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    counter: #70757a;
+    margin: 10px;
+}

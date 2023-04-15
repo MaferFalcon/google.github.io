@@ -1,0 +1,107 @@
+<!-- Poner un signo de ! y enter y nos pone todo el básico de html -->
+
+<!DOCTYPE html>
+<html lang="es"> <!-- es = español -->
+<head> <!-- info para el navegador -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon Google</title>
+
+    <!-- Crear una carpeta  CSS y dentro de esta crear el archivo main.css-->
+    <!-- Conectar mi index con el css-->
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+<body>
+    
+    <!-- Realizar el header de Google -->
+    <!-- Header es una división -->
+    <header>
+        <!-- nav = aporta navegación dentro de la pag-->
+        <nav>
+            <!-- ul = lista no ordenada, class para modificar en css-->
+            <ul class="nav-right-section"> <!-- li*4 para crear 4 automáticamente-->
+                <li> <!-- a = ancla de un link-->
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com.mx/imghp?hl=es&tab=ri&ogbl">Imágenes</a>
+                </li>
+                <li class="menu">
+                    <a href="">
+                    
+                    </a>
+                </li>
+                <li class="perfil">
+                    <a href="">
+                        <img src="https://lh3.googleusercontent.com/ogw/AAEL6sjHqKg3zsiIPGakhf6TiTFspXJrpUmEhY5394E7vQ=s32-c-mo" alt="foto de mafer">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- LOGO-->
+        <section class="main-logo"> <!-- dividir el contenido en secciones-->
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="logo Google">
+        </section>
+        
+        <!-- BUSCADOR / INPUT -->
+        <section class="main-input">
+            <div class="main-input-container">
+                <span class="search-icon"> <!-- para poder agregar estilo-->
+                </span>
+                <input type="text">
+                <a class="micro-icon" href=""></a>
+                <a class="cam-icon" href=""></a>
+            </div>
+        </section>
+
+        <!-- BOTONES-->
+        <section class="main-buttons">
+            <div>
+                <button> Buscar con Google </button>
+            </div>
+            <div>
+                <button> Voy a tener suerte </button>
+            </div>  
+        </section>
+    
+    </main>
+
+    <footer> <!--Pie de página-->
+        
+        <ul class="footer-left">
+            <li>
+                <a href="">Sobre Google</a>
+            </li>
+            <li>
+                <a href="">Publicidad</a>
+            </li>
+            <li>
+                <a href="">Negocios</a>
+            </li>
+            <li>
+                <a href="">Cómo funciona la búsqueda</a>
+            </li>
+        </ul>
+    
+        <ul class="footer-right">
+            <li>
+                <a href="">Privacidad</a>
+            </li>
+            <li>
+                <a href="">Condiciones</a>
+            </li>
+            <li>
+                <a href="">Preferencias</a>
+            </li>
+        </ul>
+
+    </footer>
+
+</body>
+</html>
